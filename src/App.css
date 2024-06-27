@@ -1,3 +1,7 @@
+*{
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
@@ -15,7 +19,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +28,24 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.icon-button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  color: inherit;
+  /* Ensure icon color inherits from parent */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select-box {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.icon-button:hover,
+.label-button:hover {
+  opacity: 0.8;
 }
